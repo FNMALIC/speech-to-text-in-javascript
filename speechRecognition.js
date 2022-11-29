@@ -9,7 +9,7 @@ if ("webkitSpeechRecognition" in window) {
 
   speechRecognition.onstart = () => {
     document.querySelector("#status").style.display = "block";
-    console.log(speechRecognition.lang)
+    
   };
   speechRecognition.onerror = () => {
     document.querySelector("#status").style.display = "none";
